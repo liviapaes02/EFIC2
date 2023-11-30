@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+}
+nav li {
+    display: inline-block;
+}
+nav li a{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 13px;
+}
+nav li a:hover{
+    background-color: blue;
+}
+.dropdown-menu{
+    position: absolute;
+    box-shadow: 0 0 2px black;
+    display: none;
+}
+.dropdown-menu a{
+    display: block;
+    color: black;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0 rgba(50, 50, 50, 0,22);
+    padding: 20px;
+    margin: 20px;
+    width: 400px;
+    transition: all 0.3s ease-out;
+}
+.card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+.card p {
+    color: black;
+    font-size: 16px;
+}
+.image {
+    float: right;
+    max-width: 350px;
+    max-height: 350px;
+}
+.blueviolet {
+    border-left: 3px solid blueviolet;
+}
+button{
+    background-image: linear-gradient(45deg, blue, lightblue);
+    padding: 20px 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+
+}
+
+.botao{
+    box-sizing: border-box;
+}
+
+@keyframes anima{
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.05);
+    }
+}
+
+button:hover{
+    animation-name: anima;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+input{
+    background-color: violet;
+    color: white;
+}
+a {
+    text-align: center;
+    font-size: 14px;
+    color: black;
+    font-weight: center;
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    color: blueviolet;
+    opacity: 0.5;
+}
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    color: blue;
+}
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: conter;
+    color: blueviolet;
+}
+
+h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: blue;
+    font-size: 25px;
+}
+
+    /* Grid */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 50px);
+        height: 800px;
+        background-color: blueviolet;
+        }
+        
+        .stretch {
+        grid-template-columns: auto;
+        align-content: stretch;
+        }
+        
+        /* Grid Item */
+        .item-1 {
+        grid-row: span 5;
+        grid-column: span 3;
+        background-image: url(img/img01.jpg);
+        margin: 5px;
+        text-align: center;
+        font-size: 1.5em;
+        }
+        .item-2 {
+        grid-row: span 4;
+        grid-column: span 3;
+        background-image: url(img/img02.jpg);
+        margin: 5px;
+        text-align: center;
+        font-size: 1.5em;
+        }
+        .item-3 {
+        grid-row: span 5;
+        grid-column: span 2;
+        background-image: url(img/img03.jpg);
+        margin: 5px;
+        text-align: center;
+        font-size: 1.5em;
+        }
+        .item-4 {
+        grid-row: span 11;
+        grid-column: span 8;
+        margin: 5px;
+        background-image: url(img/img04.jpg);
+        text-align: center;
+        font-size: 1.5em;
+        }
+        .item-5 {
+        grid-row: span 10;
+        grid-column: span 4;
+        background-image: url(img/img05.jpg);
+        margin: 5px;
+        text-align: center;
+        font-size: 1.5em;
+        }
+        .item-6 {
+        grid-row: span 9;
+        grid-column: span 4;
+        background-image: url(img/img06.jpg);
+        margin: 5px;
+        text-align: center;
+        font-size: 1.5em;
+        }
+        .item-7 {
+        grid-row: span 10;
+        grid-column: span 8;
+        background-image: url(img/img07.jpg);
+        margin: 5px;
+        text-align: center;
+        font-size: 1.5em;
+        }
+        .item-8 {
+        grid-row: span 12;
+        grid-column: span 2;
+        margin: 5px;
+        background-image: url(img/img08.jpg);
+        text-align: center;
+        font-size: 1.5em;
+        }
+        .item-9 {
+        grid-row: span 11;
+        grid-column: span 3;
+        background-image: url(img/img09.jpg);
+        margin: 5px;
+        text-align: center;
+        font-size: 1.5em;
+        }
+        .item-10 {
+        grid-row: span 12;
+        grid-column: span 3;
+        margin: 5px;
+        background-image: url(img/img10.jpg);
+        text-align: center;
+        font-size: 1.5em;
+        }
+        .grid {
+            max-width: 1000px;
+            margin: 0 auto;
+            border: 3px solid blue;
+            }
+img{
+max-width: 300px;
+height: auto;
+}
+br{
+    margin: auto;
+}
+pre{
+    margin: auto;
+}
+
+.container{
+    background-color: blueviolet;
+    max-width: 1000px;
+    height: auto;
+    padding: 20px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.container > div{
+    flex: 1 0 150px;
+    margin: 0 10px;
+}
+
+.galery {
+    width: 914px;
+    height: 205px;
+    background-color: blue;
+    overflow: hidden;
+    margin-left: 14%;
+}
+
+.galery .fotos {
+    width: 1000%;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.galery .fotos img {
+    width: 300px;
+    
+}
+
+@media (max-width: 600px) {
+    div, img, iframe, a, br, pre, .container {
+    width: 100% !important;
+    }
+}
